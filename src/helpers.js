@@ -1,16 +1,13 @@
 import React, { useState } from "react";
+import styled from "@emotion/styled";
 
-export const FlexRow = props => (
-  <div
-    css={{
-      // ...props.style,
-      display: "flex",
-      flexDirection: "row",
-      border: "1px solid red"
-    }}
-    {...props}
-  />
-);
+
+export const FlexRow = styled.div({
+  display: "flex",
+  flexDirection: "row",
+  height: "50px",
+  border: "2px solid blue"
+});
 
 export const FlexColumn = props => (
   <div style={{ display: "flex", flexDirection: "column" }} {...props} />
