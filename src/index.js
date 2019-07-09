@@ -184,7 +184,8 @@ const TargetSelectorPanel = props => {
       { id: 7, category: "property", label: "anotherStyle", selected: false }
     ];
 
-    const SAMPLE_ALL_LISTS = [SAMPLE_LIST1, SAMPLE_LIST2, SAMPLE_LIST3];
+    // const SAMPLE_ALL_LISTS = [SAMPLE_LIST1, SAMPLE_LIST2, SAMPLE_LIST3];
+    const SAMPLE_ALL_LISTS = [SAMPLE_LIST3, SAMPLE_LIST3, SAMPLE_LIST3];
 
     const SELECTED_LIST = SAMPLE_ALL_LISTS[Math.round(Math.random() * 2)];
 
@@ -208,14 +209,36 @@ const TargetSelectorPanel = props => {
           </ActionSheet>
         </FlexRow>
         {transientAddingState ? <AddingRow /> : null}
-        {SELECTED_LIST.map(item => (
-          <FlexRow style={{ height: theme.layout.rowHeight.medium }}>
+        {SELECTED_LIST.map((item, index) => (
+          <FlexRow
+            key={"item" + index}
+            style={{
+              position: "relative",
+              height: theme.layout.rowHeight.medium,
+              fontWeight: item.id === selected ? 600 : null,
+              backgroundColor: item.id === selected ? "hsl(0,0%,90%)" : null
+            }}
+            onMouseDown={() => {
+              setSelected(item.id);
+              setTransientAddingState(false);
+              console.log("item ", item.id, " selected");
+            }}
+            onMouseEnter={e => {
+              console.log(e.buttons);
+              e.buttons === 1 ? setSelected(item.id) : null;
+            }}
+          >
             <div
               style={{ display: "inline-block", fontWeight: 600, width: 20 }}
             >
-              {item.selected ? "✓" : null}
+              {item.id === selected ? "✓" : null}
             </div>
             <span>{item.label}</span>
+            <span style={{ position: "absolute", right: "0px" }}>
+              <ActionSheet>
+                <Button>x</Button>
+              </ActionSheet>
+            </span>
           </FlexRow>
         ))}
       </FlexColumn>
@@ -225,7 +248,10 @@ const TargetSelectorPanel = props => {
   const PathControl = SAMPLE_PATH.map((item, index, itemList) => (
     <>
       {item.type === "component" ? (
-        <FlexRow style={{ marginRight: 8, paddingTop: 1 }}>
+        <FlexRow
+          style={{ marginRight: 8, paddingTop: 1 }}
+          key={"index" + index}
+        >
           <Icons.Component />
         </FlexRow>
       ) : null}
@@ -329,7 +355,7 @@ ReactDOM.render(
       </Section>
     </div>
     <div>
-      <img src="/target@2x.png" width="256px" />
+      <img alt="" src="/target@2x.png" width="256px" />
     </div>
   </FlexRow>,
   rootElement

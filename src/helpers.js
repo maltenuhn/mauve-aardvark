@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 
 export const FlexRow = props => (
-  <div style={{ display: "flex", alignItems: "center" }} {...props} />
+  <div
+    css={{
+      // ...props.style,
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: 'center',
+      border: "1px solid red"
+    }}
+    {...props}
+  />
 );
 
 export const FlexColumn = props => (

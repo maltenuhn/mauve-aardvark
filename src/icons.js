@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
-import React, { useState } from "react";
 
 export const Icons = {
   ExpansionArrowSmall: props => (
@@ -14,8 +13,8 @@ export const Icons = {
       <path
         d="M7 12L10.5355 8.46447L7 4.92893"
         stroke="#545454"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -30,37 +29,37 @@ export const Icons = {
       <path
         d="M3.58334 12.7917L9.00001 11.0312L14.4167 12.7917"
         stroke="#C8C8FF"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M9 2.5V7.91667"
         stroke="#C8C8FF"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M2.5 6.85944V11.1406C2.5 12.2369 3.20711 13.2811 4.24059 13.6988L7.77615 15.2651C8.53766 15.5783 9.46234 15.5783 10.2238 15.2651L13.7594 13.6988C14.7929 13.2289 15.5 12.2369 15.5 11.1406V6.85944C15.5 5.76305 14.7929 4.71888 13.7594 4.3012L10.2238 2.73494C9.46234 2.42169 8.53766 2.42169 7.77615 2.73494L4.24059 4.3012C3.20711 4.71888 2.5 5.76305 2.5 6.85944Z"
         stroke="#7777FF"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M3.20416 5.45208L7.97083 7.61875C8.62083 7.88958 9.37916 7.88958 10.0292 7.61875L15.0125 5.34375"
         stroke="#7777FF"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M9 7.91663V14.9583"
         stroke="#7777FF"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -69,9 +68,9 @@ export const Icons = {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g id="Artboard" fill="hsl(0,0%,40%)">
           <g id="FourDots">
@@ -90,9 +89,9 @@ export const Icons = {
         <g
           id="Page-1"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         >
           <g
             id="Artboard-Copy"
@@ -113,9 +112,9 @@ export const Icons = {
         <g
           id="Page-1"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         >
           <g
             id="Artboard-Copy"
@@ -137,15 +136,15 @@ export const Icons = {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g
           id="Inspector-Copy-2"
           transform="translate(-236.000000, -466.000000)"
           fill="hsl(0,0%,40%)"
-          fill-rule="nonzero"
+          fillRule="nonzero"
         >
           <g
             id="PlusButtonIcon-Copy-4"
@@ -165,15 +164,15 @@ export const Icons = {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g
           id="Inspector-Copy-2"
           transform="translate(-239.000000, -354.000000)"
           fill="hsl(0,0%,40%)"
-          fill-rule="nonzero"
+          fillRule="nonzero"
         >
           <g
             id="PlusButtonIcon-Copy-6"
