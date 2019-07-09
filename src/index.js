@@ -170,15 +170,15 @@ const TargetSelectorPanel = props => {
     };
 
     const SAMPLE_LIST1 = [
-      { id: 1, category: "element", label: "Element", selected: false },
+      { id: 1, category: "element", label: "C Element", selected: false },
       { id: 2, category: "property", label: "customStyle1", selected: true }
     ];
     const SAMPLE_LIST2 = [
-      { id: 3, category: "element", label: "Element", selected: true }
+      { id: 3, category: "element", label: "A Element", selected: true }
     ];
 
     const SAMPLE_LIST3 = [
-      { id: 4, category: "element", label: "Element", selected: false },
+      { id: 4, category: "element", label: "B Element", selected: false },
       { id: 5, category: "property", label: "customStyle1", selected: false },
       { id: 6, category: "property", label: "anOddStyle", selected: true },
       { id: 7, category: "property", label: "anotherStyle", selected: false }
@@ -211,7 +211,7 @@ const TargetSelectorPanel = props => {
         {transientAddingState ? <AddingRow /> : null}
         {SELECTED_LIST.map((item, index) => (
           <FlexRow
-            key={"item" + index}
+            key={"itemm" + index + Math.random() * 100}
             style={{
               position: "relative",
               height: theme.layout.rowHeight.medium,
