@@ -211,7 +211,9 @@ const TargetSelectorPanel = props => {
         {transientAddingState ? <AddingRow /> : null}
         {SELECTED_LIST.map((item, index) => (
           <FlexRow
+
             key={"itemm" + index + Math.random() * 100}
+
             style={{
               position: "relative",
               height: theme.layout.rowHeight.medium,
@@ -248,10 +250,12 @@ const TargetSelectorPanel = props => {
   const PathControl = SAMPLE_PATH.map((item, index, itemList) => (
     <>
       {item.type === "component" ? (
+
         <FlexRow
           style={{ marginRight: 8, paddingTop: 1 }}
           key={"index" + index}
         >
+
           <Icons.Component />
         </FlexRow>
       ) : null}
