@@ -1,12 +1,13 @@
 {
-  "name": "cursed-jesus-a912ef1",
+  "name": "mauve-melodic-dumpster",
   "version": "1.0.0",
-  "description": "",
+  "description": "Trying to see if this works",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "@emotion/core": "10.0.14",
     "@emotion/styled": "10.0.14",
+    "ramda": "0.26.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-scripts": "3.0.1",

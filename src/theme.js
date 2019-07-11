@@ -19,5 +19,12 @@ export const styles = {
   section: {
     backgroundColor: "orange",
     "&:hover": { backgroundColor: "blue" }
+  },
+  input: {
+    borderRadius: "2px",
+    border: "1px solid grey",
+    outline: "none",
+    padding: "2px",
+    "&:focus": { border: "1px solid #007Aff" }
   }
 };

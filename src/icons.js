@@ -9,6 +9,7 @@ export const Icons = {
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M7 12L10.5355 8.46447L7 4.92893"
@@ -25,6 +26,7 @@ export const Icons = {
       viewBox="0 0 18 18"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M3.58334 12.7917L9.00001 11.0312L14.4167 12.7917"
@@ -63,8 +65,8 @@ export const Icons = {
       />
     </svg>
   ),
-  FourDots: () => (
-    <svg width="8px" height="8px" viewBox="0 0 8 8">
+  FourDots: props => (
+    <svg width="8px" height="8px" viewBox="0 0 8 8" {...props}>
       <g
         id="Page-1"
         stroke="none"
@@ -84,8 +86,8 @@ export const Icons = {
     </svg>
   ),
   ExpansionArrow: {
-    Expanded: () => (
-      <svg width="11px" height="6px" viewBox="0 0 11 6">
+    Expanded: props => (
+      <svg width="11px" height="6px" viewBox="0 0 11 6" {...props}>
         <g
           id="Page-1"
           stroke="none"
@@ -107,8 +109,8 @@ export const Icons = {
         </g>
       </svg>
     ),
-    NotExpanded: () => (
-      <svg width="6px" height="11px" viewBox="0 0 6 11">
+    NotExpanded: props => (
+      <svg width="6px" height="11px" viewBox="0 0 6 11" {...props}>
         <g
           id="Page-1"
           stroke="none"
@@ -159,8 +161,8 @@ export const Icons = {
       </g>
     </svg>
   ),
-  Plus: () => (
-    <svg width="9px" height="9px" viewBox="0 0 9 9" version="1.1">
+  Plus: props => (
+    <svg width="9px" height="9px" viewBox="0 0 9 9" version="1.1" {...props}>
       <g
         id="Page-1"
         stroke="none"

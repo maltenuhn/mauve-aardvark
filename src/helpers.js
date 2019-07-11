@@ -4,8 +4,8 @@ import styled from "@emotion/styled";
 export const FlexRow = styled.div({
   display: "flex",
   flexDirection: "row",
-  height: "50px",
-  border: "2px solid blue"
+  alignItems: "center",
+  whiteSpace: "nowrap"
 });
 
 export const FlexColumn = props => (
